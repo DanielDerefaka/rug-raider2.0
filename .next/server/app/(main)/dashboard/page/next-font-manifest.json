@@ -3,9 +3,9 @@
   "app": {
     "[project]/src/app/(main)/dashboard/page": [
       "static/media/LufgaBold-s.p.5011208c.ttf",
-      "static/media/LufgaRegular-s.p.75c09583.ttf",
+      "static/media/LufgaLight-s.p.16cc06a3.ttf",
       "static/media/LufgaMedium-s.p.f02edfbc.ttf",
-      "static/media/LufgaLight-s.p.16cc06a3.ttf"
+      "static/media/LufgaRegular-s.p.75c09583.ttf"
     ]
   },
   "appUsingSizeAdjust": true,

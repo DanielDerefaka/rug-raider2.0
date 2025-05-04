@@ -196,10 +196,7 @@ const CONNECTION_CONFIG = {
 // List of available RPC endpoints - add more options for better fallback capabilities
 const RPC_ENDPOINTS = [
     // Your current endpoint
-    'https://mainnet.helius-rpc.com/?api-key=56ad7ab1-3b24-442a-9141-0b362594dac9',
-    'https://solana-api.projectserum.com',
-    'https://ssc-dao.genesysgo.net',
-    'https://api.metaplex.solana.com'
+    'https://mainnet.helius-rpc.com/?api-key=56ad7ab1-3b24-442a-9141-0b362594dac9'
 ];
 // Create a connection with intelligent endpoint selection
 class SolanaConnectionManager {
