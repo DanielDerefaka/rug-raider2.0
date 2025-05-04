@@ -2408,11 +2408,10 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$x$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__X$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/x.js [app-client] (ecmascript) <export default as X>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$chevron$2d$down$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ChevronDown$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/chevron-down.js [app-client] (ecmascript) <export default as ChevronDown>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$chevron$2d$up$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ChevronUp$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/chevron-up.js [app-client] (ecmascript) <export default as ChevronUp>");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$external$2d$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ExternalLink$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/external-link.js [app-client] (ecmascript) <export default as ExternalLink>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/image.js [app-client] (ecmascript)");
 ;
 var _s = __turbopack_context__.k.signature();
-'use client';
+"use client";
 ;
 ;
 ;
@@ -2427,7 +2426,7 @@ const WalletModal = ({ isOpen, onClose })=>{
     // Load recently used wallet from localStorage
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
         "WalletModal.useEffect": ()=>{
-            const recent = localStorage.getItem('recentWallet');
+            const recent = localStorage.getItem("recentWallet");
             if (recent) {
                 setRecentWallet(recent);
             }
@@ -2446,7 +2445,7 @@ const WalletModal = ({ isOpen, onClose })=>{
         try {
             select(walletAdapter.name);
             // Save to recent wallets
-            localStorage.setItem('recentWallet', walletAdapter.name);
+            localStorage.setItem("recentWallet", walletAdapter.name);
             setRecentWallet(walletAdapter.name);
             // If wallet is installed, try to connect
             if (walletAdapter.readyState === __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$solana$2f$wallet$2d$adapter$2d$base$2f$lib$2f$esm$2f$adapter$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["WalletReadyState"].Installed) {
@@ -2454,7 +2453,7 @@ const WalletModal = ({ isOpen, onClose })=>{
                 onClose();
             }
         } catch (error) {
-            console.error('Failed to connect:', error);
+            console.error("Failed to connect:", error);
         }
     };
     const handleDisconnect = async ()=>{
@@ -2462,7 +2461,7 @@ const WalletModal = ({ isOpen, onClose })=>{
             await disconnect();
             onClose();
         } catch (error) {
-            console.error('Failed to disconnect:', error);
+            console.error("Failed to disconnect:", error);
         }
     };
     if (!isOpen) return null;
@@ -2474,46 +2473,46 @@ const WalletModal = ({ isOpen, onClose })=>{
                 onClick: onClose
             }, void 0, false, {
                 fileName: "[project]/src/components/Wallet/ModalWallet.tsx",
-                lineNumber: 76,
+                lineNumber: 71,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "relative w-full max-w-md bg-[#1E2029] rounded-2xl shadow-xl border border-gray-800",
+                className: "relative w-full max-w-md bg-[#1A1B23] rounded-xl shadow-xl overflow-hidden",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "flex items-center justify-between p-6 border-b border-gray-800",
+                        className: "flex items-center justify-between p-6",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                                className: "text-lg font-semibold text-white",
-                                children: publicKey ? 'Connected' : 'Connect Wallet'
+                                className: "text-base font-medium text-white",
+                                children: "Connect Wallet"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/Wallet/ModalWallet.tsx",
-                                lineNumber: 85,
+                                lineNumber: 77,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                 onClick: onClose,
-                                className: "p-1 text-gray-400 hover:text-white transition-colors",
+                                className: "text-gray-400 hover:text-white transition-colors",
                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$x$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__X$3e$__["X"], {
                                     className: "w-5 h-5"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/Wallet/ModalWallet.tsx",
-                                    lineNumber: 92,
+                                    lineNumber: 79,
                                     columnNumber: 13
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/src/components/Wallet/ModalWallet.tsx",
-                                lineNumber: 88,
+                                lineNumber: 78,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/Wallet/ModalWallet.tsx",
-                        lineNumber: 84,
+                        lineNumber: 76,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "p-6",
+                        className: "px-6 pb-6",
                         children: publicKey ? // Connected state
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             className: "space-y-4",
@@ -2521,14 +2520,23 @@ const WalletModal = ({ isOpen, onClose })=>{
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                     className: "flex items-center space-x-3 p-3 bg-gray-800/50 rounded-lg",
                                     children: [
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
-                                            src: wallet?.adapter.icon,
-                                            alt: wallet?.adapter.name,
+                                        wallet?.adapter.icon ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                            src: wallet.adapter.icon || "/placeholder.svg",
+                                            alt: wallet.adapter.name,
+                                            width: 40,
+                                            height: 40,
                                             className: "w-10 h-10 rounded-full"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/Wallet/ModalWallet.tsx",
-                                            lineNumber: 102,
-                                            columnNumber: 17
+                                            lineNumber: 90,
+                                            columnNumber: 19
+                                        }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center text-sm text-white",
+                                            children: wallet?.adapter.name.slice(0, 2)
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/components/Wallet/ModalWallet.tsx",
+                                            lineNumber: 98,
+                                            columnNumber: 19
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                             children: [
@@ -2537,7 +2545,7 @@ const WalletModal = ({ isOpen, onClose })=>{
                                                     children: wallet?.adapter.name
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/Wallet/ModalWallet.tsx",
-                                                    lineNumber: 108,
+                                                    lineNumber: 103,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2545,19 +2553,19 @@ const WalletModal = ({ isOpen, onClose })=>{
                                                     children: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["formatAddress"])(publicKey.toBase58())
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/Wallet/ModalWallet.tsx",
-                                                    lineNumber: 109,
+                                                    lineNumber: 104,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/Wallet/ModalWallet.tsx",
-                                            lineNumber: 107,
+                                            lineNumber: 102,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/Wallet/ModalWallet.tsx",
-                                    lineNumber: 101,
+                                    lineNumber: 88,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -2566,13 +2574,13 @@ const WalletModal = ({ isOpen, onClose })=>{
                                     children: "Disconnect"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/Wallet/ModalWallet.tsx",
-                                    lineNumber: 113,
+                                    lineNumber: 108,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/Wallet/ModalWallet.tsx",
-                            lineNumber: 100,
+                            lineNumber: 87,
                             columnNumber: 13
                         }, this) : // Not connected state
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2583,273 +2591,274 @@ const WalletModal = ({ isOpen, onClose })=>{
                                     children: "You need to connect a Solana wallet."
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/Wallet/ModalWallet.tsx",
-                                    lineNumber: 123,
+                                    lineNumber: 118,
                                     columnNumber: 15
                                 }, this),
                                 recentWallet && allAvailableWallets.some((w)=>w.adapter.name === recentWallet) && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                     className: "space-y-2",
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                            className: "text-xs font-medium text-gray-500 uppercase tracking-wider",
+                                            className: "text-xs font-medium text-gray-500",
                                             children: "Recently used"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/Wallet/ModalWallet.tsx",
-                                            lineNumber: 130,
+                                            lineNumber: 123,
                                             columnNumber: 19
                                         }, this),
-                                        allAvailableWallets.filter((w)=>w.adapter.name === recentWallet).map((wallet)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(WalletButton, {
-                                                wallet: wallet,
-                                                onClick: ()=>handleWalletClick(wallet.adapter),
-                                                isConnecting: connecting
-                                            }, wallet.adapter.name, false, {
-                                                fileName: "[project]/src/components/Wallet/ModalWallet.tsx",
-                                                lineNumber: 136,
-                                                columnNumber: 23
-                                            }, this))
-                                    ]
-                                }, void 0, true, {
-                                    fileName: "[project]/src/components/Wallet/ModalWallet.tsx",
-                                    lineNumber: 129,
-                                    columnNumber: 17
-                                }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    children: [
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                            onClick: ()=>setIsMoreWalletsOpen(!isMoreWalletsOpen),
-                                            className: "flex items-center justify-between w-full py-2 text-sm text-gray-400 hover:text-white transition-colors",
-                                            children: [
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                    children: "More wallets"
-                                                }, void 0, false, {
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "grid gap-2",
+                                            children: allAvailableWallets.filter((w)=>w.adapter.name === recentWallet).map((wallet)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(WalletButton, {
+                                                    wallet: wallet,
+                                                    onClick: ()=>handleWalletClick(wallet.adapter),
+                                                    isConnecting: connecting
+                                                }, wallet.adapter.name, false, {
                                                     fileName: "[project]/src/components/Wallet/ModalWallet.tsx",
-                                                    lineNumber: 153,
-                                                    columnNumber: 19
-                                                }, this),
-                                                isMoreWalletsOpen ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$chevron$2d$up$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ChevronUp$3e$__["ChevronUp"], {
-                                                    className: "w-4 h-4"
-                                                }, void 0, false, {
-                                                    fileName: "[project]/src/components/Wallet/ModalWallet.tsx",
-                                                    lineNumber: 155,
-                                                    columnNumber: 21
-                                                }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$chevron$2d$down$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ChevronDown$3e$__["ChevronDown"], {
-                                                    className: "w-4 h-4"
-                                                }, void 0, false, {
-                                                    fileName: "[project]/src/components/Wallet/ModalWallet.tsx",
-                                                    lineNumber: 157,
-                                                    columnNumber: 21
-                                                }, this)
-                                            ]
-                                        }, void 0, true, {
+                                                    lineNumber: 128,
+                                                    columnNumber: 25
+                                                }, this))
+                                        }, void 0, false, {
                                             fileName: "[project]/src/components/Wallet/ModalWallet.tsx",
-                                            lineNumber: 149,
-                                            columnNumber: 17
-                                        }, this),
-                                        isMoreWalletsOpen && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "mt-2 space-y-2 max-h-[300px] overflow-y-auto",
-                                            children: [
-                                                installedWallets.length > 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                    className: "space-y-2",
-                                                    children: [
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
-                                                            className: "text-xs font-medium text-gray-500 uppercase tracking-wider mt-2",
-                                                            children: "Installed"
-                                                        }, void 0, false, {
-                                                            fileName: "[project]/src/components/Wallet/ModalWallet.tsx",
-                                                            lineNumber: 166,
-                                                            columnNumber: 25
-                                                        }, this),
-                                                        installedWallets.map((wallet)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(WalletButton, {
-                                                                wallet: wallet,
-                                                                onClick: ()=>handleWalletClick(wallet.adapter),
-                                                                isConnecting: connecting
-                                                            }, wallet.adapter.name, false, {
-                                                                fileName: "[project]/src/components/Wallet/ModalWallet.tsx",
-                                                                lineNumber: 170,
-                                                                columnNumber: 27
-                                                            }, this))
-                                                    ]
-                                                }, void 0, true, {
-                                                    fileName: "[project]/src/components/Wallet/ModalWallet.tsx",
-                                                    lineNumber: 165,
-                                                    columnNumber: 23
-                                                }, this),
-                                                loadableWallets.length > 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                    className: "space-y-2",
-                                                    children: [
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
-                                                            className: "text-xs font-medium text-gray-500 uppercase tracking-wider mt-2",
-                                                            children: "Available"
-                                                        }, void 0, false, {
-                                                            fileName: "[project]/src/components/Wallet/ModalWallet.tsx",
-                                                            lineNumber: 183,
-                                                            columnNumber: 25
-                                                        }, this),
-                                                        loadableWallets.map((wallet)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(WalletButton, {
-                                                                wallet: wallet,
-                                                                onClick: ()=>handleWalletClick(wallet.adapter),
-                                                                isConnecting: connecting
-                                                            }, wallet.adapter.name, false, {
-                                                                fileName: "[project]/src/components/Wallet/ModalWallet.tsx",
-                                                                lineNumber: 187,
-                                                                columnNumber: 27
-                                                            }, this))
-                                                    ]
-                                                }, void 0, true, {
-                                                    fileName: "[project]/src/components/Wallet/ModalWallet.tsx",
-                                                    lineNumber: 182,
-                                                    columnNumber: 23
-                                                }, this),
-                                                notDetectedWallets.length > 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                    className: "space-y-2",
-                                                    children: [
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
-                                                            className: "text-xs font-medium text-gray-500 uppercase tracking-wider mt-2",
-                                                            children: "Not installed"
-                                                        }, void 0, false, {
-                                                            fileName: "[project]/src/components/Wallet/ModalWallet.tsx",
-                                                            lineNumber: 200,
-                                                            columnNumber: 25
-                                                        }, this),
-                                                        notDetectedWallets.map((wallet)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(WalletButton, {
-                                                                wallet: wallet,
-                                                                onClick: ()=>window.open(wallet.adapter.url, '_blank'),
-                                                                isConnecting: false,
-                                                                isNotDetected: true
-                                                            }, wallet.adapter.name, false, {
-                                                                fileName: "[project]/src/components/Wallet/ModalWallet.tsx",
-                                                                lineNumber: 204,
-                                                                columnNumber: 27
-                                                            }, this))
-                                                    ]
-                                                }, void 0, true, {
-                                                    fileName: "[project]/src/components/Wallet/ModalWallet.tsx",
-                                                    lineNumber: 199,
-                                                    columnNumber: 23
-                                                }, this)
-                                            ]
-                                        }, void 0, true, {
-                                            fileName: "[project]/src/components/Wallet/ModalWallet.tsx",
-                                            lineNumber: 162,
+                                            lineNumber: 124,
                                             columnNumber: 19
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/Wallet/ModalWallet.tsx",
-                                    lineNumber: 148,
-                                    columnNumber: 15
+                                    lineNumber: 122,
+                                    columnNumber: 17
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "p-4 bg-[#24273E] rounded-lg border border-gray-700",
-                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "flex items-start space-x-3",
-                                        children: [
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                className: "p-2 bg-purple-500/10 rounded-lg",
-                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
-                                                    className: "w-6 h-6 text-purple-400",
-                                                    viewBox: "0 0 24 24",
-                                                    fill: "none",
-                                                    stroke: "currentColor",
-                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
-                                                        strokeLinecap: "round",
-                                                        strokeLinejoin: "round",
-                                                        strokeWidth: 2,
-                                                        d: "M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "flex items-center justify-between",
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                                                    className: "text-xs font-medium text-gray-500",
+                                                    children: "More wallets"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/components/Wallet/ModalWallet.tsx",
+                                                    lineNumber: 142,
+                                                    columnNumber: 19
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                                    onClick: ()=>setIsMoreWalletsOpen(!isMoreWalletsOpen),
+                                                    className: "text-gray-400 hover:text-white transition-colors",
+                                                    children: isMoreWalletsOpen ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$chevron$2d$up$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ChevronUp$3e$__["ChevronUp"], {
+                                                        className: "w-4 h-4"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/Wallet/ModalWallet.tsx",
-                                                        lineNumber: 228,
-                                                        columnNumber: 23
+                                                        lineNumber: 147,
+                                                        columnNumber: 42
+                                                    }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$chevron$2d$down$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ChevronDown$3e$__["ChevronDown"], {
+                                                        className: "w-4 h-4"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/components/Wallet/ModalWallet.tsx",
+                                                        lineNumber: 147,
+                                                        columnNumber: 78
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/Wallet/ModalWallet.tsx",
-                                                    lineNumber: 222,
-                                                    columnNumber: 21
+                                                    lineNumber: 143,
+                                                    columnNumber: 19
                                                 }, this)
-                                            }, void 0, false, {
-                                                fileName: "[project]/src/components/Wallet/ModalWallet.tsx",
-                                                lineNumber: 221,
-                                                columnNumber: 19
-                                            }, this),
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/src/components/Wallet/ModalWallet.tsx",
+                                            lineNumber: 141,
+                                            columnNumber: 17
+                                        }, this),
+                                        isMoreWalletsOpen && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "mt-2 grid grid-cols-2 gap-2",
+                                            children: allAvailableWallets.map((wallet)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                                    onClick: ()=>handleWalletClick(wallet.adapter),
+                                                    className: "flex flex-col items-center justify-center p-4 rounded-lg bg-[#1E2029] hover:bg-[#24273E] transition-colors",
+                                                    children: [
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                            className: "w-8 h-8 mb-2",
+                                                            children: wallet.adapter.icon ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                                                src: wallet.adapter.icon || "/placeholder.svg",
+                                                                alt: wallet.adapter.name,
+                                                                width: 32,
+                                                                height: 32,
+                                                                className: "w-full h-full rounded-md"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/src/components/Wallet/ModalWallet.tsx",
+                                                                lineNumber: 161,
+                                                                columnNumber: 29
+                                                            }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                className: "w-full h-full bg-gray-700 rounded-md flex items-center justify-center text-xs text-white",
+                                                                children: wallet.adapter.name.slice(0, 2)
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/src/components/Wallet/ModalWallet.tsx",
+                                                                lineNumber: 169,
+                                                                columnNumber: 29
+                                                            }, this)
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/src/components/Wallet/ModalWallet.tsx",
+                                                            lineNumber: 159,
+                                                            columnNumber: 25
+                                                        }, this),
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                            className: "text-xs font-medium text-white",
+                                                            children: wallet.adapter.name
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/src/components/Wallet/ModalWallet.tsx",
+                                                            lineNumber: 174,
+                                                            columnNumber: 25
+                                                        }, this)
+                                                    ]
+                                                }, wallet.adapter.name, true, {
+                                                    fileName: "[project]/src/components/Wallet/ModalWallet.tsx",
+                                                    lineNumber: 154,
+                                                    columnNumber: 23
+                                                }, this))
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/components/Wallet/ModalWallet.tsx",
+                                            lineNumber: 152,
+                                            columnNumber: 19
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/src/components/Wallet/ModalWallet.tsx",
+                                    lineNumber: 140,
+                                    columnNumber: 15
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "mt-4 bg-[#1E2029] rounded-lg border border-gray-800/50 overflow-hidden",
+                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "flex items-start p-4",
+                                        children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                children: [
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                                        className: "font-medium text-white",
-                                                        children: "New to the Solana ecosystem?"
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/src/components/Wallet/ModalWallet.tsx",
-                                                        lineNumber: 232,
-                                                        columnNumber: 21
-                                                    }, this),
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                        className: "mt-1 text-sm text-gray-400",
-                                                        children: "Let us show you around. Visit the Learn Center on SolanaFloor to set up your first wallet."
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/src/components/Wallet/ModalWallet.tsx",
-                                                        lineNumber: 233,
-                                                        columnNumber: 21
-                                                    }, this),
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                                        onClick: ()=>window.open('https://solanafloor.com/learn', '_blank'),
-                                                        className: "mt-2 inline-flex items-center space-x-1 text-sm text-purple-400 hover:text-purple-300",
+                                                className: "flex-shrink-0 mr-3",
+                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                    className: "w-8 h-8 flex items-center justify-center",
+                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+                                                        width: "24",
+                                                        height: "24",
+                                                        viewBox: "0 0 24 24",
+                                                        fill: "none",
+                                                        xmlns: "http://www.w3.org/2000/svg",
                                                         children: [
-                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                children: "Learn more"
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                                                                d: "M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z",
+                                                                stroke: "white",
+                                                                strokeWidth: "1.5",
+                                                                strokeLinecap: "round",
+                                                                strokeLinejoin: "round"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/components/Wallet/ModalWallet.tsx",
-                                                                lineNumber: 240,
-                                                                columnNumber: 23
+                                                                lineNumber: 187,
+                                                                columnNumber: 25
                                                             }, this),
-                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$external$2d$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ExternalLink$3e$__["ExternalLink"], {
-                                                                className: "w-3 h-3"
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                                                                d: "M12 8V12",
+                                                                stroke: "white",
+                                                                strokeWidth: "1.5",
+                                                                strokeLinecap: "round",
+                                                                strokeLinejoin: "round"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/components/Wallet/ModalWallet.tsx",
-                                                                lineNumber: 241,
-                                                                columnNumber: 23
+                                                                lineNumber: 194,
+                                                                columnNumber: 25
+                                                            }, this),
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                                                                d: "M12 16H12.01",
+                                                                stroke: "white",
+                                                                strokeWidth: "1.5",
+                                                                strokeLinecap: "round",
+                                                                strokeLinejoin: "round"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/src/components/Wallet/ModalWallet.tsx",
+                                                                lineNumber: 201,
+                                                                columnNumber: 25
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/src/components/Wallet/ModalWallet.tsx",
-                                                        lineNumber: 236,
+                                                        lineNumber: 186,
+                                                        columnNumber: 23
+                                                    }, this)
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/components/Wallet/ModalWallet.tsx",
+                                                    lineNumber: 185,
+                                                    columnNumber: 21
+                                                }, this)
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/components/Wallet/ModalWallet.tsx",
+                                                lineNumber: 184,
+                                                columnNumber: 19
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                className: "flex-1",
+                                                children: [
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                                                        className: "text-sm font-medium text-white",
+                                                        children: "New to the Solana ecosystem?"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/components/Wallet/ModalWallet.tsx",
+                                                        lineNumber: 212,
+                                                        columnNumber: 21
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                        className: "mt-1 text-xs text-gray-400",
+                                                        children: "Let us show you around. Visit the Learn Center on SolanaFloor to set up your first wallet."
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/components/Wallet/ModalWallet.tsx",
+                                                        lineNumber: 213,
                                                         columnNumber: 21
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/components/Wallet/ModalWallet.tsx",
-                                                lineNumber: 231,
+                                                lineNumber: 211,
+                                                columnNumber: 19
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                className: "flex-shrink-0 ml-2",
+                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$chevron$2d$up$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ChevronUp$3e$__["ChevronUp"], {
+                                                    className: "w-4 h-4 text-gray-400"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/components/Wallet/ModalWallet.tsx",
+                                                    lineNumber: 218,
+                                                    columnNumber: 21
+                                                }, this)
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/components/Wallet/ModalWallet.tsx",
+                                                lineNumber: 217,
                                                 columnNumber: 19
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/Wallet/ModalWallet.tsx",
-                                        lineNumber: 220,
+                                        lineNumber: 183,
                                         columnNumber: 17
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/Wallet/ModalWallet.tsx",
-                                    lineNumber: 219,
+                                    lineNumber: 182,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/Wallet/ModalWallet.tsx",
-                            lineNumber: 122,
+                            lineNumber: 117,
                             columnNumber: 13
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/components/Wallet/ModalWallet.tsx",
-                        lineNumber: 97,
+                        lineNumber: 84,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/Wallet/ModalWallet.tsx",
-                lineNumber: 82,
+                lineNumber: 74,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/components/Wallet/ModalWallet.tsx",
-        lineNumber: 74,
+        lineNumber: 69,
         columnNumber: 5
     }, this);
 };
@@ -2863,61 +2872,101 @@ const WalletButton = ({ wallet, onClick, isConnecting, isNotDetected = false })=
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
         onClick: onClick,
         disabled: isConnecting,
-        className: `flex items-center justify-between w-full p-3 rounded-lg transition-colors ${isNotDetected ? 'bg-gray-800/30 hover:bg-gray-800/50' : 'bg-gray-800/50 hover:bg-gray-800/70'} ${isConnecting ? 'opacity-50 cursor-not-allowed' : ''}`,
+        className: "flex items-center w-full p-3 rounded-lg bg-[#1E2029] hover:bg-[#24273E] transition-colors",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "flex items-center space-x-3",
                 children: [
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                        src: wallet.adapter.icon,
+                    wallet.adapter.icon ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                        src: wallet.adapter.icon || "/placeholder.svg",
                         alt: wallet.adapter.name,
-                        className: "w-8 h-8 rounded-full",
-                        height: 30,
-                        width: 30
+                        width: 24,
+                        height: 24,
+                        className: "w-6 h-6 rounded-full"
                     }, void 0, false, {
                         fileName: "[project]/src/components/Wallet/ModalWallet.tsx",
-                        lineNumber: 278,
-                        columnNumber: 9
+                        lineNumber: 246,
+                        columnNumber: 11
+                    }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "w-6 h-6 bg-gray-700 rounded-full flex items-center justify-center text-xs text-white",
+                        children: wallet.adapter.name.slice(0, 1)
+                    }, void 0, false, {
+                        fileName: "[project]/src/components/Wallet/ModalWallet.tsx",
+                        lineNumber: 254,
+                        columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                        className: "font-medium text-white",
+                        className: "text-sm font-medium text-white",
                         children: wallet.adapter.name
                     }, void 0, false, {
                         fileName: "[project]/src/components/Wallet/ModalWallet.tsx",
-                        lineNumber: 285,
+                        lineNumber: 258,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/Wallet/ModalWallet.tsx",
-                lineNumber: 277,
+                lineNumber: 244,
                 columnNumber: 7
             }, this),
-            isNotDetected && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$external$2d$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ExternalLink$3e$__["ExternalLink"], {
-                className: "w-4 h-4 text-gray-400"
-            }, void 0, false, {
-                fileName: "[project]/src/components/Wallet/ModalWallet.tsx",
-                lineNumber: 288,
-                columnNumber: 9
-            }, this),
             isConnecting && wallet.adapter.connecting && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "w-4 h-4 border-2 border-purple-500 border-t-transparent rounded-full animate-spin"
+                className: "ml-auto w-4 h-4 border-2 border-purple-500 border-t-transparent rounded-full animate-spin"
             }, void 0, false, {
                 fileName: "[project]/src/components/Wallet/ModalWallet.tsx",
-                lineNumber: 291,
+                lineNumber: 261,
                 columnNumber: 9
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/components/Wallet/ModalWallet.tsx",
-        lineNumber: 268,
+        lineNumber: 239,
         columnNumber: 5
     }, this);
 };
 _c1 = WalletButton;
-var _c, _c1;
+const WalletOption = ({ name, icon, onClick })=>{
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+        onClick: onClick,
+        className: "flex flex-col items-center justify-center p-4 rounded-lg bg-[#1E2029] hover:bg-[#24273E] transition-colors",
+        children: [
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "w-8 h-8 mb-2",
+                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                    src: icon || "/placeholder.svg",
+                    alt: name,
+                    width: 32,
+                    height: 32,
+                    className: "w-full h-full rounded-md"
+                }, void 0, false, {
+                    fileName: "[project]/src/components/Wallet/ModalWallet.tsx",
+                    lineNumber: 280,
+                    columnNumber: 9
+                }, this)
+            }, void 0, false, {
+                fileName: "[project]/src/components/Wallet/ModalWallet.tsx",
+                lineNumber: 279,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                className: "text-xs font-medium text-white",
+                children: name
+            }, void 0, false, {
+                fileName: "[project]/src/components/Wallet/ModalWallet.tsx",
+                lineNumber: 288,
+                columnNumber: 7
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "[project]/src/components/Wallet/ModalWallet.tsx",
+        lineNumber: 275,
+        columnNumber: 5
+    }, this);
+};
+_c2 = WalletOption;
+var _c, _c1, _c2;
 __turbopack_context__.k.register(_c, "WalletModal");
 __turbopack_context__.k.register(_c1, "WalletButton");
+__turbopack_context__.k.register(_c2, "WalletOption");
 if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
     __turbopack_context__.k.registerExports(module, globalThis.$RefreshHelpers$);
 }
@@ -2938,9 +2987,11 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Wallet$2f$ModalWallet$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/Wallet/ModalWallet.tsx [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$wallet$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Wallet$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/wallet.js [app-client] (ecmascript) <export default as Wallet>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$chevron$2d$down$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ChevronDown$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/chevron-down.js [app-client] (ecmascript) <export default as ChevronDown>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/image.js [app-client] (ecmascript)");
 ;
 var _s = __turbopack_context__.k.signature();
 'use client';
+;
 ;
 ;
 ;
@@ -2957,39 +3008,39 @@ const WalletConnectButton = ({ className = '', showBalance = false, variant = 'c
         return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
             children: [
                 !publicKey ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                    className: `flex items-center space-x-2 px-4 py-2.5 bg-primary-600 hover:bg-primary-700 text-white rounded-lg transition-colors font-medium ${className}`,
+                    className: `flex items-center space-x-2 px-4 py-2.5 bg-primary-600 hover:bg-primary-700 text-gray-800 dark:text-white rounded-lg transition-colors font-medium ${className}`,
                     onClick: ()=>setIsModalOpen(true),
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$wallet$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Wallet$3e$__["Wallet"], {
                             className: "w-4 h-4"
                         }, void 0, false, {
                             fileName: "[project]/src/components/Wallet/WalletConnectButton.tsx",
-                            lineNumber: 34,
+                            lineNumber: 35,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                             children: "Connect Wallet"
                         }, void 0, false, {
                             fileName: "[project]/src/components/Wallet/WalletConnectButton.tsx",
-                            lineNumber: 35,
+                            lineNumber: 36,
                             columnNumber: 13
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/Wallet/WalletConnectButton.tsx",
-                    lineNumber: 30,
+                    lineNumber: 31,
                     columnNumber: 11
                 }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                    className: `flex items-center space-x-2 px-4 py-2.5 bg-gray-800 hover:bg-gray-700 text-white rounded-lg transition-colors ${className}`,
+                    className: `flex items-center space-x-2 px-4 py-2.5 bg-gray-800 hover:bg-gray-700 text-gray-800 dark:text-whiterounded-lg transition-colors ${className}`,
                     onClick: ()=>setIsModalOpen(true),
                     children: [
-                        wallet?.adapter.icon && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
+                        wallet?.adapter.icon && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                             src: wallet.adapter.icon,
                             alt: wallet.adapter.name,
                             className: "w-5 h-5 rounded-full"
                         }, void 0, false, {
                             fileName: "[project]/src/components/Wallet/WalletConnectButton.tsx",
-                            lineNumber: 43,
+                            lineNumber: 44,
                             columnNumber: 15
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -2997,20 +3048,20 @@ const WalletConnectButton = ({ className = '', showBalance = false, variant = 'c
                             children: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["formatAddress"])(publicKey.toBase58())
                         }, void 0, false, {
                             fileName: "[project]/src/components/Wallet/WalletConnectButton.tsx",
-                            lineNumber: 49,
+                            lineNumber: 50,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$chevron$2d$down$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ChevronDown$3e$__["ChevronDown"], {
                             className: "w-4 h-4 text-gray-400"
                         }, void 0, false, {
                             fileName: "[project]/src/components/Wallet/WalletConnectButton.tsx",
-                            lineNumber: 50,
+                            lineNumber: 51,
                             columnNumber: 13
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/Wallet/WalletConnectButton.tsx",
-                    lineNumber: 38,
+                    lineNumber: 39,
                     columnNumber: 11
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Wallet$2f$ModalWallet$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["WalletModal"], {
@@ -3018,7 +3069,7 @@ const WalletConnectButton = ({ className = '', showBalance = false, variant = 'c
                     onClose: ()=>setIsModalOpen(false)
                 }, void 0, false, {
                     fileName: "[project]/src/components/Wallet/WalletConnectButton.tsx",
-                    lineNumber: 54,
+                    lineNumber: 55,
                     columnNumber: 9
                 }, this)
             ]
@@ -3030,19 +3081,19 @@ const WalletConnectButton = ({ className = '', showBalance = false, variant = 'c
             className: className
         }, void 0, false, {
             fileName: "[project]/src/components/Wallet/WalletConnectButton.tsx",
-            lineNumber: 64,
+            lineNumber: 65,
             columnNumber: 12
         }, this);
     }
     // If not connected, show minimal connect button
     if (!publicKey) {
         return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-            className: `px-4 py-2 text-sm font-medium text-white bg-primary-600 rounded-lg hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-primary-500 ${className}`,
+            className: `px-4 py-2 text-sm font-medium text-gray-700 dark:text-white bg-primary-600 rounded-lg hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-primary-500 ${className}`,
             onClick: ()=>document.querySelector('.wallet-adapter-button')?.click(),
             children: "Connect Wallet"
         }, void 0, false, {
             fileName: "[project]/src/components/Wallet/WalletConnectButton.tsx",
-            lineNumber: 70,
+            lineNumber: 71,
             columnNumber: 7
         }, this);
     }
@@ -3057,12 +3108,12 @@ const WalletConnectButton = ({ className = '', showBalance = false, variant = 'c
                     children: "Loading..."
                 }, void 0, false, {
                     fileName: "[project]/src/components/Wallet/WalletConnectButton.tsx",
-                    lineNumber: 85,
+                    lineNumber: 86,
                     columnNumber: 13
                 }, this) : `${tokens.length} Tokens`
             }, void 0, false, {
                 fileName: "[project]/src/components/Wallet/WalletConnectButton.tsx",
-                lineNumber: 83,
+                lineNumber: 84,
                 columnNumber: 9
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -3071,13 +3122,13 @@ const WalletConnectButton = ({ className = '', showBalance = false, variant = 'c
                 children: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["formatAddress"])(publicKey.toBase58())
             }, void 0, false, {
                 fileName: "[project]/src/components/Wallet/WalletConnectButton.tsx",
-                lineNumber: 92,
+                lineNumber: 93,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/components/Wallet/WalletConnectButton.tsx",
-        lineNumber: 81,
+        lineNumber: 82,
         columnNumber: 5
     }, this);
 };
@@ -3209,32 +3260,6 @@ const InfoBar = ({ workspaceId })=>{
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         className: "flex items-center justify-end gap-6 p-4",
         children: [
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "flex items-center gap-2",
-                children: [
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                        className: "text-sm font-medium",
-                        children: "Credits"
-                    }, void 0, false, {
-                        fileName: "[project]/src/components/main/infobar/index.tsx",
-                        lineNumber: 115,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$badge$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Badge"], {
-                        variant: "outline",
-                        className: "bg-primary/10",
-                        children: "250"
-                    }, void 0, false, {
-                        fileName: "[project]/src/components/main/infobar/index.tsx",
-                        lineNumber: 116,
-                        columnNumber: 9
-                    }, this)
-                ]
-            }, void 0, true, {
-                fileName: "[project]/src/components/main/infobar/index.tsx",
-                lineNumber: 114,
-                columnNumber: 7
-            }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "relative",
                 children: [

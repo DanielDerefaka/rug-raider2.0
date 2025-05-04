@@ -13,15 +13,7 @@ import {
   SolflareWalletAdapter,
   TorusWalletAdapter,
   LedgerWalletAdapter,
-  CloverWalletAdapter,
-  MathWalletAdapter,
-  TokenPocketWalletAdapter,
-  CoinbaseWalletAdapter,
-  SolongWalletAdapter,
-  Coin98WalletAdapter,
-  SafePalWalletAdapter,
-  BitpieWalletAdapter,
-  BitgetWalletAdapter
+  CloverWalletAdapter
 } from '@solana/wallet-adapter-wallets';
 import { WalletModalProvider } from '@solana/wallet-adapter-react-ui';
 import { clusterApiUrl } from '@solana/web3.js';
@@ -74,28 +66,21 @@ export const WalletContextProvider = ({ children }: { children: ReactNode }) => 
   const network = WalletAdapterNetwork.Mainnet;
   
   // Use our custom RPC connection configuration
+  // Instead of clusterApiUrl(network), we now use our managed connection
   const endpoint = getConnection().rpcEndpoint;
   
-  // Set up wallet adapters with all popular wallets
+  // Set up wallet adapters
   const wallets = [
     new PhantomWalletAdapter(),
     new SolflareWalletAdapter(),
     new TorusWalletAdapter(),
     new LedgerWalletAdapter(),
-    new CloverWalletAdapter(),
-    new MathWalletAdapter(),
-    new TokenPocketWalletAdapter(),
-    new CoinbaseWalletAdapter(),
-    new SolongWalletAdapter(),
-    new Coin98WalletAdapter(),
-    new SafePalWalletAdapter(),
-    new BitpieWalletAdapter(),
-    new BitgetWalletAdapter()
+    new CloverWalletAdapter()
   ];
   
   return (
     <ConnectionProvider endpoint={endpoint}>
-      <SolanaWalletProvider wallets={wallets} autoConnect={false}>
+      <SolanaWalletProvider wallets={wallets} autoConnect>
         <WalletModalProvider>
           <WalletDataProvider>
             {children}
@@ -168,6 +153,9 @@ const WalletDataProvider = ({ children }: { children: ReactNode }) => {
       }
       
       setError(errorMessage);
+      
+      // Return a minimal set of tokens if we have them cached
+      // This allows the UI to continue functioning with stale data if needed
     } finally {
       setIsLoadingTokens(false);
     }

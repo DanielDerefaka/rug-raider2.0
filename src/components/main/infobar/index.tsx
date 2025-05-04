@@ -111,10 +111,10 @@ const InfoBar = ({ workspaceId }: Props) => {
   return (
     <div className="flex items-center justify-end gap-6 p-4">
       {/* Credits Section */}
-      <div className="flex items-center gap-2">
+      {/* <div className="flex items-center gap-2">
         <span className="text-sm font-medium">Credits</span>
         <Badge variant="outline" className="bg-primary/10">250</Badge>
-      </div>
+      </div> */}
 
       {/* Notification Section */}
       <div className="relative">

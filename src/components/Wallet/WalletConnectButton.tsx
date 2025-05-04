@@ -6,6 +6,7 @@ import { useWalletContext } from '@/context/WalletContext';
 import { formatAddress } from '@/lib/utils';
 import { WalletModal } from './ModalWallet';
 import { Wallet, ChevronDown } from 'lucide-react';
+import Image from 'next/image';
 
 interface WalletConnectButtonProps {
   className?: string;
@@ -28,7 +29,7 @@ export const WalletConnectButton: React.FC<WalletConnectButtonProps> = ({
       <>
         {!publicKey ? (
           <button 
-            className={`flex items-center space-x-2 px-4 py-2.5 bg-primary-600 hover:bg-primary-700 text-white rounded-lg transition-colors font-medium ${className}`}
+            className={`flex items-center space-x-2 px-4 py-2.5 bg-primary-600 hover:bg-primary-700 text-gray-800 dark:text-white rounded-lg transition-colors font-medium ${className}`}
             onClick={() => setIsModalOpen(true)}
           >
             <Wallet className="w-4 h-4" />
@@ -36,14 +37,16 @@ export const WalletConnectButton: React.FC<WalletConnectButtonProps> = ({
           </button>
         ) : (
           <button 
-            className={`flex items-center space-x-2 px-4 py-2.5 bg-gray-800 hover:bg-gray-700 text-white rounded-lg transition-colors ${className}`}
+            className={`flex items-center space-x-2 px-4 py-2.5 bg-gray-800 hover:bg-gray-700 text-gray-800 dark:text-whiterounded-lg transition-colors ${className}`}
             onClick={() => setIsModalOpen(true)}
           >
             {wallet?.adapter.icon && (
-              <img 
+              <Image
                 src={wallet.adapter.icon} 
                 alt={wallet.adapter.name} 
                 className="w-5 h-5 rounded-full"
+                width={32}
+                height={32}
               />
             )}
             <span className="font-medium">{formatAddress(publicKey.toBase58())}</span>
@@ -68,7 +71,7 @@ export const WalletConnectButton: React.FC<WalletConnectButtonProps> = ({
   if (!publicKey) {
     return (
       <button 
-        className={`px-4 py-2 text-sm font-medium text-white bg-primary-600 rounded-lg hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-primary-500 ${className}`}
+        className={`px-4 py-2 text-sm font-medium text-gray-700 dark:text-white bg-primary-600 rounded-lg hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-primary-500 ${className}`}
         onClick={() => document.querySelector('.wallet-adapter-button')?.click()}
       >
         Connect Wallet
