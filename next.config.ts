@@ -3,9 +3,20 @@ import { createCivicAuthPlugin } from "@civic/auth/nextjs"
 
 const nextConfig: NextConfig = {
  /* config options here */
- images: { domains: ["i.pravatar.cc", "images.unsplash.com", "your-storage-service.com", "ucarecdn.com", "hebbkx1anhila5yf.public.blob.vercel-storage.com", "prod-files-secure.s3.us-west-2.amazonaws.com", "prod-files-secure.s3.us-west-2.amazonaws.com"] },
- pageExtensions: ["ts", "tsx", "mdx"],
-
+ images: {
+  loader: 'custom',
+  loaderFile: './my-image-loader.ts',
+  remotePatterns: [
+    {
+      protocol: 'https',
+      hostname: '**',
+    },
+    {
+      protocol: 'http',
+      hostname: '**',
+    },
+  ],
+},
 
 
  typescript: {
