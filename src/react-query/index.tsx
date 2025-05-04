@@ -3,8 +3,8 @@
 import { ReactNode } from 'react';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { WalletContextProvider } from '@/context/WalletContext';
-// import { NotificationProvider } from '@/contexts/NotificationContext';
-// import { TokenAnalysisProvider } from '@/contexts/TokenAnalysisContext';
+import { NotificationProvider } from '@/context/NotificationContext';
+import { TokenAnalysisProvider } from '@/context/TokenAnalysisContext';
 
 // Create a client
 const queryClient = new QueryClient({
@@ -20,11 +20,11 @@ export function Providers({ children }: { children: ReactNode }) {
   return (
     <QueryClientProvider client={queryClient}>
       <WalletContextProvider>
-        {/* <TokenAnalysisProvider>
-          <NotificationProvider> */}
+        <TokenAnalysisProvider>
+          <NotificationProvider>
             {children}
-          {/* </NotificationProvider>
-        </TokenAnalysisProvider> */}
+          </NotificationProvider>
+        </TokenAnalysisProvider>
       </WalletContextProvider>
     </QueryClientProvider>
   );

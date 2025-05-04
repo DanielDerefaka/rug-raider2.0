@@ -5,6 +5,7 @@ import { cn } from "@/lib/utils";
 import { ThemeProvider } from "@/context/theme-provider";
 import {Providers} from '@/react-query'
 import { Toaster } from "sonner";
+import TokenApiDebugger from "@/RugcheckDebugger";
 
 
 
@@ -73,6 +74,7 @@ export default function RootLayout({
              <Providers>
    
       {children}
+      {process.env.NODE_ENV === "development" && <TokenApiDebugger />}
   
             <Toaster />
               </Providers>

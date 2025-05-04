@@ -75,7 +75,7 @@ export const WalletModal: React.FC<WalletModalProps> = ({ isOpen, onClose }) => 
         {/* Header */}
         <div className="flex items-center justify-between p-6">
           <h2 className="text-base font-medium text-white">Connect Wallet</h2>
-          <button onClick={onClose} className="text-gray-400 hover:text-white transition-colors">
+          <button onClick={onClose} className="text-gray-400 cursor-pointer hover:text-white transition-colors">
             <X className="w-5 h-5" />
           </button>
         </div>
@@ -107,7 +107,7 @@ export const WalletModal: React.FC<WalletModalProps> = ({ isOpen, onClose }) => 
 
               <button
                 onClick={handleDisconnect}
-                className="w-full py-3 px-4 bg-red-500/10 text-red-500 rounded-lg hover:bg-red-500/20 transition-colors"
+                className="w-full py-3 px-4 bg-red-500/10 text-red-500 rounded-lg cursor-pointer hover:bg-red-500/20 transition-colors"
               >
                 Disconnect
               </button>
@@ -142,7 +142,7 @@ export const WalletModal: React.FC<WalletModalProps> = ({ isOpen, onClose }) => 
                   <h3 className="text-xs font-medium text-gray-500">More wallets</h3>
                   <button
                     onClick={() => setIsMoreWalletsOpen(!isMoreWalletsOpen)}
-                    className="text-gray-400 hover:text-white transition-colors"
+                    className="text-gray-400 cursor-pointer hover:text-white transition-colors"
                   >
                     {isMoreWalletsOpen ? <ChevronUp className="w-4 h-4" /> : <ChevronDown className="w-4 h-4" />}
                   </button>
@@ -154,7 +154,7 @@ export const WalletModal: React.FC<WalletModalProps> = ({ isOpen, onClose }) => 
                       <button
                         key={wallet.adapter.name}
                         onClick={() => handleWalletClick(wallet.adapter)}
-                        className="flex flex-col items-center justify-center p-4 rounded-lg bg-[#1E2029] hover:bg-[#24273E] transition-colors"
+                        className="flex flex-col items-center justify-center p-4  cursor-pointer rounded-lg bg-[#1E2029] hover:bg-[#24273E] transition-colors"
                       >
                         <div className="w-8 h-8 mb-2">
                           {wallet.adapter.icon ? (
