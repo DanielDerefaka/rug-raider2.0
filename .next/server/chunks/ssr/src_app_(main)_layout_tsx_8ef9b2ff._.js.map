@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 7, "column": 0}, "map": {"version":3,"sources":["file:///Users/macbookk/Desktop/CODES%20%F0%9F%98%8E/rug-raider/src/app/%28main%29/layout.tsx"],"sourcesContent":["import type { Metadata } from \"next\";\n\nexport const metadata: Metadata = {\n  title: \"Rug Raider | Dashboard \",\n  description:\n    \"Rug Raider is a platform that provides a wide range of AI tools and services to help you stay on top of your business. Generate images, text and everything else that you need to get your business off the ground.\",\n  openGraph: {\n    images: [\"/mylo-banner.jpg\"],\n  },\n};\n\nexport default function RootLayout({\n  children,\n}: Readonly<{\n  children: React.ReactNode;\n}>) {\n  return (\n    <main className=\"\">\n  <div  className={cn(\"flex  overflow-hidden h-screen\")}>\n      <Sidebar />\n      <div className=\"w-full overflow-y-auto\">\n        <InfoBar />\n        {props.children}\n      </div>\n    </div>\n    </main>\n  );\n}\n"],"names":[],"mappings":";;;;;;AAEO,MAAM,WAAqB;IAChC,OAAO;IACP,aACE;IACF,WAAW;QACT,QAAQ;YAAC;SAAmB;IAC9B;AACF;AAEe,SAAS,WAAW,EACjC,QAAQ,EAGR;IACA,qBACE,8OAAC;QAAK,WAAU;kBAClB,cAAA,8OAAC;YAAK,WAAW,GAAG;;8BAChB,8OAAC;;;;;8BACD,8OAAC;oBAAI,WAAU;;sCACb,8OAAC;;;;;wBACA,MAAM,QAAQ;;;;;;;;;;;;;;;;;;AAKvB","debugId":null}}]
+}

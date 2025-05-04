@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 23, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/src/middleware.ts"],"sourcesContent":["import { authMiddleware } from '@civic/auth/nextjs/middleware'\n\nexport default authMiddleware();\n\nexport const config = {\n  // include the paths you wish to secure here\n  matcher: [\n    /*\n     * Match all request paths except:\n     * - _next directory (Next.js static files)\n     * - favicon.ico, sitemap.xml, robots.txt\n     * - image files\n     */\n    '/((?!_next|favicon.ico|sitemap.xml|robots.txt|.*\\.jpg|.*\\.png|.*\\.svg|.*\\.gif).*)',\n  ],\n}\n"],"names":[],"mappings":";;;;AAAA;AAAA;;uCAEe,CAAA,GAAA,uKAAA,CAAA,iBAAc,AAAD;AAErB,MAAM,SAAS;IACpB,4CAA4C;IAC5C,SAAS;QACP;;;;;KAKC,GACD;KACD;AACH"}}]
+}

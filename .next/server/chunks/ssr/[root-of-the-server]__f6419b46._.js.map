@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 15, "column": 0}, "map": {"version":3,"sources":["file:///Users/macbookk/Desktop/CODES%20%F0%9F%98%8E/rug-raider/src/context/theme-provider.tsx"],"sourcesContent":["'use client'\n\nimport * as React from 'react'\nimport { ThemeProvider as NextThemesProvider } from 'next-themes'\nimport { type ThemeProviderProps } from 'next-themes/dist/types'\n\nexport function ThemeProvider({ children, ...props }: ThemeProviderProps) {\n  return <NextThemesProvider {...props}>{children}</NextThemesProvider>\n}\n"],"names":[],"mappings":";;;;AAGA;AAHA;;;AAMO,SAAS,cAAc,EAAE,QAAQ,EAAE,GAAG,OAA2B;IACtE,qBAAO,8OAAC,gJAAA,CAAA,gBAAkB;QAAE,GAAG,KAAK;kBAAG;;;;;;AACzC","debugId":null}},
+    {"offset": {"line": 39, "column": 0}, "map": {"version":3,"sources":["file:///Users/macbookk/Desktop/CODES%20%F0%9F%98%8E/rug-raider/src/react-query/index.tsx"],"sourcesContent":["'use client'\n\nimport { QueryClient, QueryClientProvider } from '@tanstack/react-query'\nimport React from 'react'\n\ntype Props = { children: React.ReactNode }\n\nconst client = new QueryClient()\n\nconst ReactQueryProvider = ({ children }: Props) => {\n  return <QueryClientProvider client={client}>{children}</QueryClientProvider>\n}\n\nexport default ReactQueryProvider\n"],"names":[],"mappings":";;;;AAEA;AAAA;AAFA;;;AAOA,MAAM,SAAS,IAAI,6KAAA,CAAA,cAAW;AAE9B,MAAM,qBAAqB,CAAC,EAAE,QAAQ,EAAS;IAC7C,qBAAO,8OAAC,sLAAA,CAAA,sBAAmB;QAAC,QAAQ;kBAAS;;;;;;AAC/C;uCAEe","debugId":null}}]
+}

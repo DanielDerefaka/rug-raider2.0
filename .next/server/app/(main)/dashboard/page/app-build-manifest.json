@@ -1,0 +1,31 @@
+{
+  "pages": {
+    "/(main)/dashboard/page": [
+      "static/chunks/node_modules_next_dist_1a6ee436._.js",
+      "static/chunks/src_app_favicon_ico_mjs_8a7a8fdc._.js",
+      "static/chunks/_49e9ec1d._.css",
+      "static/chunks/node_modules_740a0d23._.js",
+      "static/chunks/node_modules_@noble_curves_esm_d476331b._.js",
+      "static/chunks/node_modules_@solana_web3_js_lib_index_browser_esm_88d65ea0.js",
+      "static/chunks/node_modules_@solana_571dd5a0._.js",
+      "static/chunks/node_modules_@solana-mobile_e61b0d77._.js",
+      "static/chunks/node_modules_7c9e46e0._.js",
+      "static/chunks/src_3100f062._.js",
+      "static/chunks/src_app_layout_tsx_c0237562._.js",
+      "static/chunks/src_14dc62bc._.js",
+      "static/chunks/node_modules_next_75e52325._.js",
+      "static/chunks/node_modules_tailwind-merge_dist_bundle-mjs_mjs_b854acb4._.js",
+      "static/chunks/node_modules_framer-motion_dist_es_82de910d._.js",
+      "static/chunks/node_modules_motion-dom_dist_es_eae4c9f6._.js",
+      "static/chunks/node_modules_d528c720._.js",
+      "static/chunks/src_app_(main)_layout_tsx_f768aec4._.js",
+      "static/chunks/[turbopack]_browser_dev_hmr-client_hmr-client_ts_fd44f5a4._.js",
+      "static/chunks/node_modules_next_dist_compiled_2ce9398a._.js",
+      "static/chunks/node_modules_next_dist_client_8f19e6fb._.js",
+      "static/chunks/node_modules_next_dist_2ecbf5fa._.js",
+      "static/chunks/node_modules_@swc_helpers_cjs_00636ac3._.js",
+      "static/chunks/_e69f0d32._.js",
+      "static/chunks/_93808211._.js"
+    ]
+  }
+}

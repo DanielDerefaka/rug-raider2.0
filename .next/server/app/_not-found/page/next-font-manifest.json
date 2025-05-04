@@ -1,0 +1,13 @@
+{
+  "pages": {},
+  "app": {
+    "[project]/src/app/_not-found/page": [
+      "static/media/LufgaBold-s.p.5011208c.ttf",
+      "static/media/LufgaRegular-s.p.75c09583.ttf",
+      "static/media/LufgaLight-s.p.16cc06a3.ttf",
+      "static/media/LufgaMedium-s.p.f02edfbc.ttf"
+    ]
+  },
+  "appUsingSizeAdjust": true,
+  "pagesUsingSizeAdjust": false
+}

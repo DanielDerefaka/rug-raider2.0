@@ -1,0 +1,51 @@
+/* [project]/src/app/lufga_be9a905f.module.css [app-client] (css) */
+@font-face {
+  font-family: lufga;
+  src: url("../media/LufgaLight-s.p.16cc06a3.ttf") format("truetype");
+  font-display: swap;
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: lufga;
+  src: url("../media/LufgaRegular-s.p.75c09583.ttf") format("truetype");
+  font-display: swap;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: lufga;
+  src: url("../media/LufgaMedium-s.p.f02edfbc.ttf") format("truetype");
+  font-display: swap;
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: lufga;
+  src: url("../media/LufgaBold-s.p.5011208c.ttf") format("truetype");
+  font-display: swap;
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: lufga Fallback;
+  src: local(Arial);
+  ascent-override: 87.82%;
+  descent-override: 30.32%;
+  line-gap-override: 0.0%;
+  size-adjust: 110.48%;
+}
+
+.lufga_be9a905f-module__gpRtSW__className {
+  font-family: lufga, lufga Fallback;
+}
+
+.lufga_be9a905f-module__gpRtSW__variable {
+  --font-lufga: "lufga", "lufga Fallback";
+}
+
+/*# sourceMappingURL=src_app_lufga_be9a905f_module_css_f9ee138c._.single.css.map*/
